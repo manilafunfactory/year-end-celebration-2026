@@ -206,17 +206,26 @@
     // Browsers require a user action before audio can play. Add your own licensed MP3 to enable this button.
     const audio = document.getElementById('backgroundMusic');
     const musicButton = document.getElementById('musicToggle');
-    musicButton.addEventListener('click', async () => {
-      if (!audio.querySelector('source') && !audio.getAttribute('src')) {
-        alert('Add a royalty-free Christmas instrumental MP3 to the audio element in index.html first. Then this button will play/pause it.');
-        return;
-      }
-      try {
-        if (audio.paused) { await audio.play(); musicButton.textContent = '♫ Pause Music'; musicButton.setAttribute('aria-pressed','true'); }
-        else { audio.pause(); musicButton.textContent = '♫ Play Christmas Music'; musicButton.setAttribute('aria-pressed','false'); }
-      } catch (e) { alert('Music could not start. Please check the MP3 file path.'); }
-    });
+    audio.load();
 
+audio.load();
+
+musicButton.addEventListener('click', async () => {
+  try {
+    if (audio.paused) {
+      await audio.play();
+      musicButton.textContent = '♫ Pause Christmas Music';
+      musicButton.setAttribute('aria-pressed', 'true');
+    } else {
+      audio.pause();
+      musicButton.textContent = '♪ Play Christmas Music';
+      musicButton.setAttribute('aria-pressed', 'false');
+    }
+  } catch (error) {
+    console.error('Music playback failed:', error);
+    alert('Music could not play. Please check the MP3 file and try again.');
+  }
+});
     // Google Forms embed setup: replace the placeholder with the full URL ending in /viewform?embedded=true.
     const formUrl = 'https://docs.google.com/forms/d/e/1FAIpQLSdAYTyQJhy6PR1e5Jhw5Z_EF-MJUe-YsnD6G_-iZvht-Mfzsw/viewform?embedded=true';
     if (formUrl.startsWith('https://docs.google.com/forms/') && formUrl.includes('embedded=true')) {
