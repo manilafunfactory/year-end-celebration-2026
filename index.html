@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#a9152b">
+  <meta name="description" content="You're invited to the US MTN & CORP Excellence Awards Year-End Celebration 2026.">
+  <title>US MTN & CORP | Excellence Awards 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--red:#a9152b;--deep:#710e20;--bright:#d6283d;--cream:#fffaf7;--white:#fff;--gold:#c9a45c;--ink:#291b1d;--muted:#745f61;--line:#f0d9dc}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:'DM Sans',sans-serif;line-height:1.6}
+    a{color:inherit}button{font:inherit;cursor:pointer}.topbar{background:var(--deep);color:#fff;text-align:center;padding:9px 16px;font-size:.76rem;letter-spacing:.18em;text-transform:uppercase}
+    nav{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:17px clamp(18px,5vw,72px);background:#fff;position:sticky;top:0;z-index:10;border-bottom:1px solid var(--line)}
+    .brand{font-weight:700;letter-spacing:.12em;color:var(--red);font-size:.85rem}.navlinks{display:flex;gap:22px;flex-wrap:wrap}.navlinks a{text-decoration:none;font-size:.83rem;color:#5d4548}.navlinks a:hover{color:var(--red)}
+    .hero{position:relative;overflow:hidden;text-align:center;padding:85px 20px 78px;background:radial-gradient(circle at 50% 5%,#fff 0,#fff7f5 48%,#f8e5e7 100%);border-bottom:1px solid var(--line)}
+    .hero:before,.hero:after{content:"✦  ❄  ✧  ❄  ✦";position:absolute;color:#d7b56e;opacity:.55;letter-spacing:1.5rem;font-size:1.1rem;white-space:nowrap;animation:drift 14s linear infinite}.hero:before{top:35px;left:-10px}.hero:after{bottom:35px;right:-10px;animation-direction:reverse}
+    .eyebrow{font-size:.76rem;letter-spacing:.25em;text-transform:uppercase;color:var(--red);font-weight:700}
+    .company-title{font-family:'Playfair Display',serif;font-size:clamp(2.5rem,6vw,5.3rem);line-height:1.06;color:var(--deep);font-weight:600;margin:14px auto 0;letter-spacing:.02em}.hero h1{font-family:'Playfair Display',serif;font-size:clamp(2.5rem,6vw,5.3rem);line-height:1.06;color:var(--deep);max-width:900px;margin:20px auto 14px;font-weight:600}.hero h1 span{display:block;color:var(--red);font-size:.65em;margin-top:10px}.hero p{max-width:650px;margin:0 auto;color:var(--muted);font-size:1.05rem}
+    .seal{display:grid;place-items:center;width:76px;height:76px;margin:26px auto;border:1px solid var(--gold);border-radius:50%;color:var(--gold);font-size:2rem;background:#fff9}
+    .hero-actions{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:28px}.btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 22px;border-radius:3px;text-decoration:none;border:1px solid var(--red);font-weight:700;font-size:.9rem;transition:transform .2s,background .2s}.btn:hover{transform:translateY(-2px)}.btn.primary{background:var(--red);color:#fff}.btn.secondary{background:#fff;color:var(--red)}
+    .countdown{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin:36px auto 0}.timebox{background:#fff;border:1px solid var(--line);min-width:82px;padding:12px 16px;box-shadow:0 5px 20px #7811240b}.timebox strong{display:block;font-size:1.65rem;color:var(--red);font-family:'Playfair Display',serif}.timebox span{font-size:.67rem;text-transform:uppercase;letter-spacing:.12em;color:var(--muted)}
+    section{padding:75px 20px}.section-inner{max-width:1050px;margin:auto}.section-head{text-align:center;margin-bottom:35px}.kicker{color:var(--red);font-size:.72rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase}.section-head h2{font:600 clamp(2rem,4vw,3rem)/1.15 'Playfair Display',serif;color:var(--deep);margin:10px 0}.section-head p{color:var(--muted);max-width:660px;margin:0 auto}
+    .details-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.detail-card{padding:25px 22px;background:#fff;border:1px solid var(--line);text-align:center}.detail-card .symbol{font-size:1.6rem;color:var(--red)}.detail-card h3{font:600 1.25rem 'Playfair Display',serif;margin:8px 0}.detail-card p{font-size:.9rem;color:var(--muted);margin:0}
+    .red-band{background:var(--deep);color:#fff}.red-band .section-head h2,.red-band .section-head p{color:#fff}.red-band .kicker{color:#e7c778}
+    .dress-card{max-width:760px;margin:auto;background:#fff;color:var(--ink);padding:30px;border-top:4px solid var(--gold);text-align:center}.colorchips{display:flex;justify-content:center;gap:10px;margin:18px 0}.chip{width:46px;height:46px;border-radius:50%;border:1px solid #ddd}.chip.red{background:#b21f32}.chip.white{background:#fff}.dress-card h3{font:600 1.6rem 'Playfair Display',serif;color:var(--deep);margin:5px}.dress-card p{color:var(--muted);margin:8px auto;max-width:590px}.dress-note{font-size:.86rem!important}
+    .gift-grid{display:grid;grid-template-columns:1fr 1.5fr;gap:24px;align-items:stretch}.gift-price{background:var(--red);color:#fff;padding:30px;text-align:center;display:flex;flex-direction:column;justify-content:center}.gift-price small{text-transform:uppercase;letter-spacing:.18em}.gift-price strong{font:700 3.8rem 'Playfair Display',serif}.gift-info{background:#fff;border:1px solid var(--line);padding:28px}.gift-info h3{font:600 1.5rem 'Playfair Display',serif;color:var(--deep);margin:0 0 10px}.gift-info p{color:var(--muted);margin:0}
+    .timeline{max-width:790px;margin:auto;position:relative}.timeline:before{content:"";position:absolute;left:124px;top:10px;bottom:10px;width:1px;background:#e7bdc3}.event{display:grid;grid-template-columns:105px 1fr;gap:38px;position:relative;padding:0 0 24px}.event:before{content:"";position:absolute;left:119px;top:7px;width:11px;height:11px;border-radius:50%;background:var(--red);border:3px solid var(--cream);box-shadow:0 0 0 1px #d8a6ae}.event time{font-weight:700;color:var(--red);font-size:.85rem;text-align:right;padding-top:1px}.event h3{margin:0 0 3px;font-size:1rem}.event p{margin:0;color:var(--muted);font-size:.88rem}.event.highlight h3{color:var(--red)}
+    .rsvp-wrap{display:grid;grid-template-columns:.85fr 1.15fr;gap:25px;align-items:stretch}.rsvp-copy{background:var(--red);color:#fff;padding:32px}.rsvp-copy h3{font:600 2rem 'Playfair Display',serif;margin:0 0 12px}.rsvp-copy p{color:#ffebed}.rsvp-copy .small{font-size:.82rem;opacity:.9}.form-panel{background:#fff;border:1px solid var(--line);padding:20px;min-height:400px}.form-panel iframe{width:100%;height:560px;border:0}.form-placeholder{display:grid;place-items:center;text-align:center;min-height:350px;padding:20px}.form-placeholder p{color:var(--muted);max-width:430px}.form-placeholder code{font-size:.8rem;overflow-wrap:anywhere;background:#fff3f4;padding:4px}
+    /* Automatic winter/Christmas atmosphere: gentle snow starts whenever the page opens. */
+    .snow-layer{position:fixed;inset:0;pointer-events:none;z-index:8;overflow:hidden;opacity:.72}
+    .snowflake{position:absolute;top:-12vh;color:#fff;font-size:var(--size,14px);text-shadow:0 1px 4px #a9152b55;animation:snowfall var(--duration,12s) linear var(--delay,0s) infinite;left:var(--left,50%)}
+    @keyframes snowfall{0%{transform:translate3d(0,-12vh,0) rotate(0deg);opacity:0}10%{opacity:.9}90%{opacity:.8}100%{transform:translate3d(var(--drift,40px),112vh,0) rotate(360deg);opacity:0}}
+    @media(prefers-reduced-motion:reduce){.snow-layer{display:none}}
+    .music{position:fixed;right:18px;bottom:18px;z-index:20;border:0;background:var(--red);color:#fff;border-radius:50px;padding:12px 17px;box-shadow:0 6px 22px #4d061c30;font-size:.85rem}.music:hover{background:var(--deep)}
+    footer{background:#310913;color:#f8e9e9;text-align:center;padding:30px 20px;font-size:.82rem}footer strong{color:#e7c778;letter-spacing:.12em}
+    .reveal{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s ease}.reveal.visible{opacity:1;transform:none}
+    @keyframes drift{0%{transform:translateX(0)}100%{transform:translateX(40px)}}@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;scroll-behavior:auto!important;transition:none!important}.reveal{opacity:1;transform:none}}
+    @media(max-width:760px){.navlinks{gap:10px}.navlinks a{font-size:.75rem}.brand{font-size:.75rem}.details-grid{grid-template-columns:1fr}.gift-grid,.rsvp-wrap{grid-template-columns:1fr}.timeline:before{left:94px}.event{grid-template-columns:78px 1fr;gap:32px}.event:before{left:89px}.event time{font-size:.75rem}.hero{padding-top:65px}.form-panel iframe{height:620px}}
+  </style>
+</head>
+<body>
+  <div class="snow-layer" id="snowLayer" aria-hidden="true"></div>
+  <div class="topbar">An evening of celebration, recognition & Christmas cheer</div>
+  <nav aria-label="Main navigation">
+    <div class="brand">US MTN & CORP</div>
+    <div class="navlinks">
+      <a href="#details">Event Details</a><a href="#dress-code">Dress Code</a><a href="#exchange-gift">Exchange Gift</a><a href="#program">Program</a><a href="#rsvp">RSVP</a>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="eyebrow">You’re warmly invited to</div>
+    <div class="company-title">US MTN &amp; CORP</div>
+    <div class="seal" aria-hidden="true">✦</div>
+    <h1>Excellence Awards <span>Year-End Celebration 2026</span></h1>
+    <p>Celebrate the people, teamwork, and achievements that made this year extraordinary — with a little Christmas magic, friendly competition, and well-deserved recognition.</p>
+    <div class="hero-actions">
+      <a class="btn primary" href="#rsvp">RSVP Now</a>
+      <a class="btn secondary" href="#program">View the Program</a>
+    </div>
+    <div class="countdown" aria-label="Countdown to event">
+      <div class="timebox"><strong id="days">--</strong><span>Days</span></div>
+      <div class="timebox"><strong id="hours">--</strong><span>Hours</span></div>
+      <div class="timebox"><strong id="minutes">--</strong><span>Minutes</span></div>
+      <div class="timebox"><strong id="seconds">--</strong><span>Seconds</span></div>
+    </div>
+  </header>
+
+  <main>
+    <section id="details">
+      <div class="section-inner reveal">
+        <div class="section-head"><div class="kicker">Save the date</div><h2>A Celebration to Remember</h2><p>Let's close the year together and celebrate the excellence behind every achievement.</p></div>
+        <div class="details-grid">
+          <article class="detail-card"><div class="symbol" aria-hidden="true">✧</div><h3>Date & Time</h3><p>Saturday, November 7, 2026<br>3:00 PM onwards</p></article>
+          <article class="detail-card"><div class="symbol" aria-hidden="true">⌖</div><h3>Venue</h3><p>LSEG Manila Office | Enter10<br>McKinley Hills, Taguig City</p></article>
+          <article class="detail-card"><div class="symbol" aria-hidden="true">❄</div><h3>The Theme</h3><p>Classic Christmas meets Excellence Awards<br>Festive red, crisp white & elegant gold</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="dress-code" class="red-band">
+      <div class="section-inner reveal">
+        <div class="section-head"><div class="kicker">Dress to celebrate</div><h2>Red & White Festive Casual</h2><p>Bring the holiday spirit while keeping it comfortable, cute, and photo-ready.</p></div>
+        <div class="dress-card">
+          <div class="colorchips" aria-label="Dress code colors"><span class="chip red" title="Red"></span><span class="chip white" title="White"></span></div>
+          <h3>Wear a little holiday magic</h3>
+          <p><strong>Red and white are the stars.</strong> Mix and match, add a festive accessory, or keep it simple with a polished casual look.</p>
+          <p>Think red tops, white shirts, knitwear, skirts, trousers, dresses, clean sneakers, loafers, or other comfortable smart-casual pieces.</p>
+          <p class="dress-note">Optional: subtle gold accessories, Christmas headbands, ribbons, or a touch of sparkle. Please wear something comfortable for games, photos, dinner, and bowling.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="dress-code-poster" style="background:#fffaf7">
+      <div class="section-inner reveal">
+        <div class="section-head">
+          <div class="kicker">What to wear</div>
+          <h2>Red & White Festive Dress Code</h2>
+          <p>Use this guide for outfit inspiration — festive, cute, casual, and ready for photos.</p>
+        </div>
+        <figure style="max-width:760px;margin:0 auto;text-align:center">
+          <img src="dress-code.png" alt="US MTN & CORP Excellence Awards 2026 red and white festive casual dress code guide for women and men" style="display:block;width:100%;height:auto;border:1px solid #f0d9dc;border-radius:12px;box-shadow:0 14px 36px #710e2012">
+          <figcaption style="margin-top:12px;color:#745f61;font-size:.85rem">Red and white outfits, neutral bottoms, and light festive accessories are encouraged.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="exchange-gift">
+      <div class="section-inner reveal">
+        <div class="section-head"><div class="kicker">A little mystery, a lot of fun</div><h2>Mystery Gift Auction</h2><p>Bring a wrapped surprise and get ready to bid, bluff, and laugh!</p></div>
+        <div class="gift-grid">
+          <div class="gift-price"><small>Exchange gift budget</small><strong>₱500</strong><span>per gift</span></div>
+          <div class="gift-info"><h3>How it works</h3><p>Everyone brings one wrapped gift without revealing what's inside. Leads will give each attendee play money, then gifts will be auctioned one by one using funny descriptions or hints. Participants bid without knowing the exact item — so choose your strategy wisely!</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="program" style="background:#fff5f5">
+      <div class="section-inner reveal">
+        <div class="section-head"><div class="kicker">The festivities</div><h2>Program & Itinerary</h2><p>From team challenges to celebrating our people, here's what's in store.</p></div>
+        <div class="timeline">
+          <div class="event"><time>3:00–3:15 PM</time><div><h3>Arrival, Welcome & Group Photo</h3><p>Arrival of attendees and welcome message from Ms. Gera.</p></div></div>
+          <div class="event"><time>3:15–3:35 PM</time><div><h3>Cup Stacking Challenge</h3><p>Quick hands, sharp focus, and team spirit.</p></div></div>
+          <div class="event"><time>3:35–3:55 PM</time><div><h3>Pen Transfer Ball Game</h3><p>A test of coordination and teamwork.</p></div></div>
+          <div class="event"><time>3:55–4:15 PM</time><div><h3>TUMPAKNERS!</h3><p>Bring your energy and competitive spirit.</p></div></div>
+          <div class="event"><time>4:15–4:35 PM</time><div><h3>Teamwork Writing Challenge</h3><p>Work together and make every word count.</p></div></div>
+          <div class="event"><time>4:35–4:40 PM</time><div><h3>Game Winners Awarding</h3><p>Applause for our challenge champions.</p></div></div>
+          <div class="event highlight"><time>4:40–5:00 PM</time><div><h3>Mystery Gift Auction</h3><p>Bid on wrapped gifts using play money and mysterious hints.</p></div></div>
+          <div class="event highlight"><time>5:00–5:30 PM</time><div><h3>US MTN & CORP Excellence Awards</h3><p>Recognition of team members, special awards, and award photos.</p></div></div>
+          <div class="event"><time>5:30–5:40 PM</time><div><h3>Closing Remarks</h3><p>Closing words before the evening continues.</p></div></div>
+          <div class="event highlight"><time>6:00–7:30 PM</time><div><h3>Dinner & Bowling Night</h3><p>Enter10, McKinley Hills, Taguig City.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="rsvp">
+      <div class="section-inner reveal">
+        <div class="section-head"><div class="kicker">We hope you'll join us</div><h2>Kindly RSVP</h2><p>Please let us know if you can make it so the team can prepare for the celebration.</p></div>
+        <div class="rsvp-wrap">
+          <div class="rsvp-copy"><h3>Save your spot.</h3><p>Your presence will make the celebration even more special. Please submit your response through the RSVP form.</p><p class="small">Your response is saved automatically by Google Forms once you submit it. The organizer can review responses in the linked Google Form / response spreadsheet.</p></div>
+          <div class="form-panel" id="rsvp-form-container">
+            <div class="form-placeholder">
+              <div>
+                <h3>Connect your RSVP form</h3>
+                <p>To save responses automatically, create a Google Form, then replace <code>PASTE_YOUR_GOOGLE_FORM_EMBED_URL_HERE</code> in this file with its embed URL. Publishing on GitHub Pages alone does not provide a database.</p>
+                <a class="btn primary" href="https://forms.google.com" target="_blank" rel="noopener">Create Google Form</a>
+                <p class="dress-note">Suggested questions: Full name, attendance confirmation, team/department, dietary restrictions, and any notes for the organizers.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <button class="music" id="musicToggle" type="button" aria-pressed="false">♫ Play Christmas Music</button>
+<audio id="backgroundMusic" loop preload="none">
+  <source src="music/christmas-instrumental.mp3" type="audio/mpeg">
+</audio>
+  <footer><strong>US MTN & CORP</strong><br>Excellence Awards Year-End Celebration 2026<br><span>Celebrate excellence. Share the joy. Make memories.</span></footer>
+
+  <script>
+    // Create a gentle snowfall every time the page opens; purely decorative, no external service needed.
+    const snowLayer = document.getElementById('snowLayer');
+    if (snowLayer && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      const flakes = 32;
+      for (let i = 0; i < flakes; i++) {
+        const flake = document.createElement('span');
+        flake.className = 'snowflake';
+        flake.textContent = ['❄','❅','❆','•'][i % 4];
+        flake.style.setProperty('--left', `${Math.random() * 100}%`);
+        flake.style.setProperty('--size', `${8 + Math.random() * 12}px`);
+        flake.style.setProperty('--duration', `${9 + Math.random() * 13}s`);
+        flake.style.setProperty('--delay', `${-Math.random() * 20}s`);
+        flake.style.setProperty('--drift', `${-50 + Math.random() * 100}px`);
+        snowLayer.appendChild(flake);
+      }
+    }
+
+    // Event is at 3:00 PM Philippine time (UTC+8), November 7, 2026.
+    const eventDate = new Date('2026-11-07T15:00:00+08:00').getTime();
+    function updateCountdown() {
+      const distance = eventDate - Date.now();
+      const values = distance <= 0 ? [0,0,0,0] : [
+        Math.floor(distance / 86400000),
+        Math.floor((distance % 86400000) / 3600000),
+        Math.floor((distance % 3600000) / 60000),
+        Math.floor((distance % 60000) / 1000)
+      ];
+      ['days','hours','minutes','seconds'].forEach((id,i) => document.getElementById(id).textContent = String(values[i]).padStart(2,'0'));
+    }
+    updateCountdown(); setInterval(updateCountdown, 1000);
+
+    // Reveal sections as they enter view.
+    const revealItems = document.querySelectorAll('.reveal');
+    if ('IntersectionObserver' in window) {
+      const observer = new IntersectionObserver(entries => entries.forEach(entry => {
+        if (entry.isIntersecting) { entry.target.classList.add('visible'); observer.unobserve(entry.target); }
+      }), {threshold: 0.08});
+      revealItems.forEach(item => observer.observe(item));
+    } else revealItems.forEach(item => item.classList.add('visible'));
+
+    // Browsers require a user action before audio can play. Add your own licensed MP3 to enable this button.
+    const audio = document.getElementById('backgroundMusic');
+    const musicButton = document.getElementById('musicToggle');
+    musicButton.addEventListener('click', async () => {
+      if (!audio.querySelector('source') && !audio.getAttribute('src')) {
+        alert('Add a royalty-free Christmas instrumental MP3 to the audio element in index.html first. Then this button will play/pause it.');
+        return;
+      }
+      try {
+        if (audio.paused) { await audio.play(); musicButton.textContent = '♫ Pause Music'; musicButton.setAttribute('aria-pressed','true'); }
+        else { audio.pause(); musicButton.textContent = '♫ Play Christmas Music'; musicButton.setAttribute('aria-pressed','false'); }
+      } catch (e) { alert('Music could not start. Please check the MP3 file path.'); }
+    });
+
+    // Google Forms embed setup: replace the placeholder with the full URL ending in /viewform?embedded=true.
+    const formUrl = 'https://docs.google.com/forms/d/e/1FAIpQLSdAYTyQJhy6PR1e5Jhw5Z_EF-MJUe-YsnD6G_-iZvht-Mfzsw/viewform?embedded=true';
+    if (formUrl.startsWith('https://docs.google.com/forms/') && formUrl.includes('embedded=true')) {
+      const container = document.getElementById('rsvp-form-container');
+      container.innerHTML = '';
+      const iframe = document.createElement('iframe');
+      iframe.title = 'Year-End Celebration RSVP form';
+      iframe.src = formUrl;
+      iframe.loading = 'lazy';
+      iframe.allow = 'clipboard-write';
+      container.appendChild(iframe);
+    }
+  </script>
+</body>
+</html>
